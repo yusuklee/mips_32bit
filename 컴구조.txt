@@ -1,0 +1,53 @@
+✅ 자주 출제되는 핵심 개념
+1. MIPS Instruction Set
+Instruction Set Architecture (ISA) 정의
+
+MIPS의 기본 구조: 32개의 32-bit 레지스터, 메모리 구조, Big Endian
+
+add, sub, lw, sw, addi 같은 기본 명령어
+
+2. Register vs Memory
+레지스터가 더 빠르며, 자주 접근하는 데이터는 레지스터에 저장해야 함
+
+메모리는 load/store 명령어를 통해 접근
+
+3. Immediate / Zero / Signed / Unsigned
+addi, lui (32bit 상수 처리용)
+
+$zero 레지스터: 항상 0
+
+부호 있는/없는 정수 표현 (2의 보수 등)
+
+4. Instruction Formats
+R-format: add, sub 등 (op, rs, rt, rd, shamt, funct)
+
+I-format: lw, sw, addi 등 (op, rs, rt, imm)
+
+J-format: j, jal 등
+
+5. Branch & Jump
+beq, bne, j, jr, jal
+
+조건문/루프의 번역
+
+slt, slti, sltu (비교 명령어)
+
+6. Procedure Call
+jal → 호출, jr $ra → 복귀
+
+스택 이용 ($sp, $ra, $s0 등)
+
+Leaf / Non-leaf procedures 구분
+
+7. Logical / Bitwise 연산
+and, or, nor, sll, srl 등
+
+Shift → 곱셈/나눗셈에 활용
+
+8. 주소 계산과 문자열 복사
+배열과 포인터 비교
+
+strcpy MIPS 코드
+
+lbu, sb 등 바이트 단위 연산
+
